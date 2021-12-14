@@ -1,4 +1,9 @@
-# hatrack# @invisiblehats/hatrack
+# @invisiblehats/hatrack
+
+## Installation
+
+Coming soon once the package is published.
+
 ## Development
 
 ### Configuring yarn
