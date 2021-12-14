@@ -1,3 +1,5 @@
+![hatrack](https://user-images.githubusercontent.com/1305776/146048641-e8210be6-ee64-4976-b9b5-a30b23d7178d.png)
+
 # @invisiblehats/hatrack
 
 ## Installation
