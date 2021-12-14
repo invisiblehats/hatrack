@@ -1,0 +1,23 @@
+{
+  "name": "hatrack",
+  "version": "0.0.1",
+  "description": "A (WIP) design system",
+  "main": "styles/hatrack.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/invisiblehats/hatrack.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "scss"
+  ],
+  "author": "mklemme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/invisiblehats/hatrack/issues"
+  },
+  "homepage": "https://github.com/invisiblehats/hatrack#readme"
+}
