@@ -1,5 +1,5 @@
 {
-  "name": "hatrack",
+  "name": "@invisiblehats/hatrack",
   "version": "0.0.1",
   "description": "A (WIP) design system",
   "main": "styles/hatrack.scss",
