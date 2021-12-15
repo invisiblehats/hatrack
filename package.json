@@ -2,7 +2,7 @@
   "name": "@invisiblehats/hatrack",
   "version": "0.0.1",
   "description": "A (WIP) design system",
-  "main": "styles/hatrack.scss",
+  "main": "src/styles/hatrack.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
