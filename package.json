@@ -2,14 +2,18 @@
   "name": "@invisiblehats/hatrack",
   "version": "0.0.1",
   "description": "A (WIP) design system",
-  "main": "src/styles/hatrack.scss",
-  "style": "src/styles/hatrack.scss",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/invisiblehats/hatrack.git"
+  },
+  "main": "src/styles/hatrack.scss",
+  "style": "src/styles/hatrack.scss",
+  "files": [
+    "/dist",
+    "/src/styles"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "bootstrap",
