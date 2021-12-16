@@ -8,6 +8,17 @@ Coming soon once the package is published.
 
 ## Development
 
+### Running storybook
+
+We use [Storybook](https://storybook.js.org/) to document our components and utilities included in Hatrack.
+
+Start the app:
+```bash
+$ yarn storybook
+```
+
+The page should automagically open on its own. If not, it should be running at http://localhost:6006/
+
 ### Configuring yarn
 
 When working on changes locally, you can tell `yarn` to use the local repo instead of the registry.
