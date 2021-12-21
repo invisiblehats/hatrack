@@ -1,2 +1,18 @@
-@import "~bootstrap";
-@import "./components";
+//
+// Hatrack
+//
+// Since we use bootstrap, we need to import in a specific order to ensure our variables are the first ones defined.
+//
+
+// Functions
+@import '~bootstrap/scss/functions';
+
+// Variables
+@import './variables';
+
+// Bootstrap library
+@import '~bootstrap/scss/bootstrap';
+
+// Hatrack library
+@import './components';
+
