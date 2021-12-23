@@ -1,1 +1,1 @@
-web: yarn http-server storybook-static --ssl
+web: yarn http-server storybook-static
