@@ -1,0 +1,17 @@
+{
+  "name": "@invisiblehat/hatrack",
+  "scripts": {},
+  "env": {
+    "YARN_PRODUCTION": {
+      "description": "If false, yarn will not run the prune phase.",
+      "value": "false"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "hobby"
+    }
+  },
+  "image": "heroku/nodejs"
+}
