@@ -6,9 +6,6 @@
     "type": "git",
     "url": "git+https://github.com/invisiblehats/hatrack.git"
   },
-  "engines": {
-    "node": "17"
-  },
   "main": "src/styles/hatrack.scss",
   "style": "src/styles/hatrack.scss",
   "files": [
