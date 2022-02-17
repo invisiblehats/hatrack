@@ -38,6 +38,7 @@
     "@storybook/html": "^6.1.21",
     "@storybook/preset-scss": "^1.0.3",
     "babel-loader": "^8.2.2",
+    "chromatic": "^6.4.3",
     "css-loader": "^3.6.0",
     "http-server": "^14.0.0",
     "sass-loader": "^10.1.1",
