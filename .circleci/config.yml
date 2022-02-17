@@ -49,8 +49,6 @@ executors:
   hatrack_config:
     docker:
       - image: cimg/node:16.14.0-browsers
-        environment:
-          NODE_ENV: production
     working_directory: ~/main-app
 
 jobs:
