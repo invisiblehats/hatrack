@@ -1,0 +1,79 @@
+# Node.js circle.ci config
+
+orbs:
+  node: circleci/node@2.0.2
+
+version: 2.1
+
+commands:
+  install_dependencies:
+    description: "Install required dependencies to run the test suite"
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - hatrack-dependencies-{{ checksum "yarn.lock" }}
+            # fallback to using the latest cache if no exact match is found
+            - hatrack-dependencies-
+      - run:
+          name: install node dependencies
+          command: |
+            yarn install --frozen-lockfile
+      - save_cache:
+          paths:
+            - ./node_modules
+          key: hatrack-dependencies-{{ checksum "yarn.lock" }}
+
+  compile_assets:
+    description: "Compile application assets"
+    steps:
+      - checkout
+      - run:
+          name: yarn build
+          command: NODE_ENV=production yarn build
+      - save_cache:
+         key: assets-cache-{{ arch }}-{{ checksum "yarn.lock" }}-{{ .Environment.CIRCLE_SHA1 }}
+         paths:
+           - .next
+
+  restore_asset_cache:
+    description: "Compile application assets"
+    steps:
+      - checkout
+      - restore_cache:
+          key: hatrack-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: assets-cache-{{ arch }}-{{ checksum "yarn.lock" }}-{{ .Environment.CIRCLE_SHA1 }}
+
+executors:
+  hatrack_config:
+    docker:
+      - image: circleci/node:16.14.0-browsers
+        environment:
+          NODE_ENV: production
+    working_directory: ~/main-app
+
+jobs:
+  jest:
+    executor: hatrack_config
+    steps:
+      - restore_asset_cache
+      - install_dependencies
+      - compile_assets
+      - run:
+          name: run tests
+          command: yarn test
+  storybook:
+    executor: hatrack_config
+    steps:
+      - restore_asset_cache
+      - install_dependencies
+      - run:
+          name: publish to chromatic
+          command: yarn chromatic
+
+workflows:
+  version: 2
+  hatrack:
+    jobs:
+      - storybook
