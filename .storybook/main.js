@@ -8,5 +8,5 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/preset-scss"
   ],
-  "framework": "@storybook/html"
+  "framework": "@storybook/react"
 }
