@@ -1,9 +1,33 @@
-import { Meta, Preview } from '@storybook/addon-docs';
+import { Meta, Canvas } from '@storybook/addon-docs';
 
-<Meta title="Components/Button" />
+<Meta title="Components/Button/Overview" />
 
-# Button
+# Colors
 
-<Preview>
+Buttons support the `$theme-colors` (primary, secondary, ...)
+
+<Canvas>
 <button className="btn btn-primary">Click me</button>
-</Preview>
+<button className="btn btn-secondary">Click me</button>
+<button className="btn btn-info">Click me</button>
+<button className="btn btn-warning">Click me</button>
+<button className="btn btn-danger">Click me</button>
+<button className="btn btn-light">Click me</button>
+<button className="btn btn-dark">Click me</button>
+</Canvas>
+
+# Sizes
+
+Buttons support a subset of the t-shirt sizes
+
+<Canvas>
+<button className="btn btn-primary btn-sm">Small (sm)</button>
+<button className="btn btn-primary btn-md">Medium (md)</button>
+<button className="btn btn-primary btn-lg">Large (lg)</button>
+</Canvas>
+
+# States
+<Canvas>
+<button className="btn btn-primary">Clickable</button>
+<button className="btn btn-primary" disabled>Not clickable</button>
+</Canvas>
