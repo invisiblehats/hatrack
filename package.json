@@ -16,7 +16,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
     "build-storybook": "NODE_OPTIONS=--openssl-legacy-provider build-storybook",
-    "heroku-postbuild": "npm run build-storybook"
+    "heroku-postbuild": "npm run build-storybook",
+    "chromatic": "npx chromatic --exit-zero-on-changes --exit-once-uploaded"
   },
   "keywords": [
     "bootstrap",
