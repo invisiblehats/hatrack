@@ -14,8 +14,7 @@ export const parameters = {
       order: [
         "Overview", ["Getting Started", "*"],
         "Utilities", ["Overview", "*"],
-        "Elements", ["Overview", "*"],
-        "Modules", ["Overview", "*", ["Getting Started", "*"]]
+        "Components", ["Overview", "*", ["Getting Started", "*"]]
       ],
       locales: '',
     },
