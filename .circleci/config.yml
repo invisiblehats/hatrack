@@ -61,7 +61,7 @@ jobs:
       - run:
           name: run tests
           command: yarn test
-  storybook:
+  chromatic:
     executor: hatrack_config
     steps:
       - restore_asset_cache
@@ -74,4 +74,4 @@ workflows:
   version: 2
   hatrack:
     jobs:
-      - storybook
+      - chromatic
