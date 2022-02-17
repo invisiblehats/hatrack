@@ -15,7 +15,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o docs",
+    "build-storybook": "build-storybook -o storybook_build",
     "heroku-postbuild": "npm run build-storybook",
     "chromatic": "npx chromatic --exit-zero-on-changes --exit-once-uploaded"
   },
