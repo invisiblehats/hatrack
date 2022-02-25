@@ -346,7 +346,7 @@
 // $enable-button-pointers:      true !default;
 // $enable-rfs:                  true !default;
 // $enable-validation-icons:     true !default;
-// $enable-negative-margins:     false !default;
+ $enable-negative-margins:     true !default;
 // $enable-deprecation-messages: true !default;
 // $enable-important-utilities:  true !default;
 //
@@ -369,15 +369,20 @@
 // You can add more entries to the $spacers map, should you need more variation.
 //
 // scss-docs-start spacer-variables-maps
-// $spacer: 1rem !default;
-// $spacers: (
-//  0: 0,
-//  1: $spacer * .25,
-//  2: $spacer * .5,
-//  3: $spacer,
-//  4: $spacer * 1.5,
-//  5: $spacer * 3,
-//) !default;
+ $spacer: 1rem !default;
+ $spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  8: $spacer * 7.5,
+  9: $spacer * 10,
+  10: $spacer * 11.5,
+) !default;
 // scss-docs-end spacer-variables-maps
 //
 // Position
