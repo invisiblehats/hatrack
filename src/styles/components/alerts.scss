@@ -1,0 +1,6 @@
+@each $color, $value in $theme-colors {
+  .alert-soft-#{$color} {
+    background-color: rgba($value, .1);
+    color: $value;
+  }
+}
